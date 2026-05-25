@@ -1,0 +1,36 @@
+# Guetting started with the SHELL
+
+## Objectives
+- Learn about the structure of the SHELL
+- Understand how to navigate in the SHELL
+- Understand the difference between a simple user and the administrator
+- Use some commands to show the actual user, the machine name, ...
+
+## Commands used
+```bash
+echo $SHELL (show the SHELL the systems's using)
+id ( show informations of the user)
+id -u or id --user (show the unique ID of the user)
+id -nG (show the list of groups of the user)
+id -u root (Show the ID of the root)
+hostname (Show the machine's name)
+pwd (Show the working directory)
+cd (Used alone give us back to the personnal directory)
+cd xxxx (Used to navigate through directory by specifying the directory path, by the way, there there's two kinds of path: absolute path which's starting with "/" and relative path which's not starting with "/")
+cal (Show the current month's calendar)
+history (List all of the commands used)
+echo $HISTSIZE (Show the number of commands saved in the history)
+!! (Execute the last command used)
+!20 (Execute the twentieth command)
+sudo -s or sudo -i ( To be connected in root mode)
+```
+## What i learned
+- Linux stores information of the current SHELL in environment variables
+- Every user in Linux have a unique identifier (UID)
+- Users can belong in multiple groups
+- The root user have privileges that the simple user don't have
+- Absolute paths always start with slash "/"
+- Relative paths never start with slash "/"
+- Commands in the history can be executed again using shortcuts like !! and !number_of_the_line
+- The home directory is the default directory for a user and always staet with /home/
+- Using sudo allows temporary connectivity to the root mode
