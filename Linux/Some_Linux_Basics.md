@@ -16,7 +16,9 @@
 # Commands used
 ```bash
 touch file1 (create the file "file1")
-mkdir Linux (create the directory "Linux")  
+mkdir Linux (create the directory "Linux")
+rmdir directory_name (remove an empty directory)
+rm -r file_or_directory_name (remove an empty or not file or directory)
 cd ~/TPLINUX;touch ~/TPLINUX/fic1 (Navigate on TPLinux directory and after create the file "fic1", won't work)
 cd ~/TPLINUX && touch ~/TPLINUX/fic1 (Do the same thing and won't work to)
 cd ~/TPLINUX || mkdir ~/TPLINUX && touch ~/TPLINUX/fic1 ( The first command navigate on TPLINUX directory and won't work, the second command create a directory named "TPLINUX" and will work and the last command create a file named "fic1" and will work too)
